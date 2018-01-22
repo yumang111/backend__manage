@@ -1,0 +1,92 @@
+.user-manage-container {
+  .el-dialog {
+    // width:1100px;
+    top: 20px;
+  } // .el-dialog__header{
+  //   display: none;
+  // }
+  // .el-dialog__body{
+  //   padding:20px;
+  // }
+  .demo-form-inline {
+    // .el-input{
+    // width:100px;
+    // }
+    min-width: 900px;
+  }
+  .font-green {
+    color: #5dcd0b;
+  }
+}
+
+
+
+@mainBlue: #008ef1;
+.user-manage-container {
+  .addCustomer {
+    margin: 40px 40px 0 0;
+  }
+  .table-tips {
+    margin-bottom: 16px;
+  }
+  .el-dialog__footer {
+    text-align: center;
+  }
+  .mycustomer-search {
+    padding-right: 10px;
+  }
+  &.customer-following {
+    .el-tabs__active-bar+.el-tabs__item {
+      border-right: none;
+      &:before {
+        background: url(../../../assets/image/mycustomer.png) !important;
+        background-size: 100% !important;
+      }
+      &.is-active:before {
+        background: url(../../../assets/image/mycustomer-act.png) !important;
+        background-size: 100% !important;
+      }
+    }
+    .el-tabs__item+.el-tabs__item {
+      &:before {
+        background: url(../../../assets/image/common-customer.png) !important;
+        background-size: 100% !important;
+      }
+      &.is-active:before {
+        background: url(../../../assets/image/commer-customer-act.png) !important;
+        background-size: 100% !important;
+      }
+    }
+    .el-tabs__item:before {
+      content: "";
+      width: 18px !important;
+      height: 15px !important;
+      display: inline-block;
+      margin-right: 6px;
+      vertical-align: middle;
+      margin-top: -2px;
+    }
+  }
+}
+
+// .el-table .bg-light-yellow {
+//   background: #fffce8;
+//   &:hover{
+//     background: #fffce8 !important;
+//   }
+// }
+//搜索条件
+.customerSearch__wrapper {
+  border-top: 1px solid #e1e5eb;
+  padding: 24px 0 10px 15px;
+}
+
+.customerSearch__item {
+  width: 174px;
+}
+
+.customerSearch__item--short {
+  width: 116px;
+  margin-right: 12px;
+}
+

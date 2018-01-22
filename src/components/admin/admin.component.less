@@ -1,0 +1,34 @@
+@aside-width: 260px;
+
+.container {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		width: 100%;
+		.main {
+			display: flex;
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			overflow: hidden;
+			aside {
+				flex:0 0 260px;
+				width: 260px;
+        background: #151825;
+				.el-menu{
+					height: 100%;
+				}
+			}
+
+			.content-container {
+				flex:1;
+				overflow-y: scroll;
+				padding: 20px;
+        // min-width:1020px;
+				.content-wrapper {
+					// background-color: #fff;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
